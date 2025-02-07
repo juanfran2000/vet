@@ -1,6 +1,5 @@
 "use client";
 import * as React from "react";
-import { useState } from "react";
 import Image from "next/image";
 import {
   Carousel,
@@ -47,20 +46,13 @@ const slides = [
 
 export const HeroDesktop = () => {
   const [api, setApi] = React.useState<CarouselApi>();
-  const [current, setCurrent] = React.useState(0);
-  const [count, setCount] = React.useState(0);
 
   React.useEffect(() => {
     if (!api) {
       return;
     }
 
-    setCount(api.scrollSnapList().length);
-    setCurrent(api.selectedScrollSnap() + 1);
-
-    api.on("select", () => {
-      setCurrent(api.selectedScrollSnap() + 1);
-    });
+    api.on("select", () => {});
   }, [api]);
 
   return (

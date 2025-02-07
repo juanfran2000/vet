@@ -1,4 +1,3 @@
-import { Button } from "../components/Button";
 import { Hero } from "../components/Hero";
 import { HeroDesktop } from "../components/HeroDesktop";
 export default function Home() {
