@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const Footer = () => {
   return (
     <footer className=" text-white py-12">
@@ -7,10 +9,12 @@ export const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center gap-x-4">
               <div className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10">
-                <img
+                <Image
                   src="/marca/petVet.png"
                   alt="logo"
-                  className="w-10 h-10 object-cover"
+                  width={40}
+                  height={40}
+                  className="object-cover"
                 />
               </div>
               <h3 className="text-xl font-bold">Mi Pet Clinic</h3>

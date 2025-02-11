@@ -1,5 +1,5 @@
 "use client";
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useEffect, useState, useMemo } from "react";
 import Image from "next/image";
 import {
   Carousel,
@@ -10,77 +10,78 @@ import {
 } from "@/components/ui/carousel";
 
 export const Info = () => {
-  const baseImages = [
-    "/clientes/cliente37.png",
-    "/clientes/cliente1.png",
-    "/clientes/cliente2.png",
-    "/clientes/cliente3.png",
-    "/clientes/cliente4.png",
-    "/clientes/cliente5.png",
-    "/clientes/cliente6.png",
-    "/clientes/cliente7.png",
-    "/clientes/cliente8.png",
-    "/clientes/cliente9.png",
-    "/clientes/cliente10.png",
-    "/clientes/cliente11.png",
-    "/clientes/cliente12.png",
-    "/clientes/cliente13.png",
-    "/clientes/cliente14.png",
-    "/clientes/cliente15.png",
-    "/clientes/cliente16.png",
-    "/clientes/cliente17.png",
-    "/clientes/cliente18.png",
-    "/clientes/cliente19.png",
-    "/clientes/cliente20.png",
-    "/clientes/cliente21.png",
-    "/clientes/cliente22.png",
-    "/clientes/cliente23.png",
-    "/clientes/cliente24.png",
-    "/clientes/cliente25.png",
-    "/clientes/cliente26.png",
-    "/clientes/cliente27.png",
-    "/clientes/cliente28.png",
-    "/clientes/cliente29.png",
-    "/clientes/cliente30.png",
-    "/clientes/cliente31.png",
-    "/clientes/cliente32.png",
-    "/clientes/cliente33.png",
-    "/clientes/cliente34.png",
-    "/clientes/cliente35.png",
-    "/clientes/cliente36.png",
-  ];
+  const baseImages = useMemo(
+    () => [
+      "/clientes/cliente37.png",
+      "/clientes/cliente1.png",
+      "/clientes/cliente2.png",
+      "/clientes/cliente3.png",
+      "/clientes/cliente4.png",
+      "/clientes/cliente5.png",
+      "/clientes/cliente6.png",
+      "/clientes/cliente7.png",
+      "/clientes/cliente8.png",
+      "/clientes/cliente9.png",
+      "/clientes/cliente10.png",
+      "/clientes/cliente11.png",
+      "/clientes/cliente12.png",
+      "/clientes/cliente13.png",
+      "/clientes/cliente14.png",
+      "/clientes/cliente15.png",
+      "/clientes/cliente16.png",
+      "/clientes/cliente17.png",
+      "/clientes/cliente18.png",
+      "/clientes/cliente19.png",
+      "/clientes/cliente20.png",
+      "/clientes/cliente21.png",
+      "/clientes/cliente22.png",
+      "/clientes/cliente23.png",
+      "/clientes/cliente24.png",
+      "/clientes/cliente25.png",
+      "/clientes/cliente26.png",
+      "/clientes/cliente27.png",
+      "/clientes/cliente28.png",
+      "/clientes/cliente29.png",
+      "/clientes/cliente30.png",
+      "/clientes/cliente31.png",
+      "/clientes/cliente32.png",
+      "/clientes/cliente33.png",
+      "/clientes/cliente34.png",
+      "/clientes/cliente35.png",
+      "/clientes/cliente36.png",
+    ],
+    []
+  );
 
-  const [randomizedImages, setRandomizedImages] = useState(baseImages);
+  const [api, setApi] = useState<any>();
 
   useEffect(() => {
-    const shuffleArray = (array: string[]) => {
-      const shuffledArray = [...array];
-      for (let i = shuffledArray.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [shuffledArray[i], shuffledArray[j]] = [
-          shuffledArray[j],
-          shuffledArray[i],
-        ];
-      }
-      return shuffledArray;
-    };
+    if (!api) return;
 
-    setRandomizedImages(shuffleArray(baseImages));
-  }, []); // Se ejecuta solo una vez al montar el componente
+    const interval = setInterval(() => {
+      api.scrollNext();
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [api]);
 
   return (
     <div className="flex flex-col lg:flex-row lg:px-4 xl:px-6 lg:gap-x-1 gap-y-1 lg:gap-y-0">
       {/* carousel */}
-      <div className="w-full lg:w-1/2  rounded-4xl relative h-[400px] lg:h-[600px]">
+      <div className="w-full lg:w-1/2 rounded-4xl relative h-[400px] lg:h-[600px]">
         <Carousel
           className="w-full h-full"
           opts={{
             loop: true,
           }}
+          setApi={setApi}
         >
           <CarouselContent className="h-full">
-            {randomizedImages.map((image, index) => (
-              <CarouselItem key={index} className="h-[400px] lg:h-[600px]">
+            {baseImages.map((image, index) => (
+              <CarouselItem
+                key={`client-${index}`}
+                className="h-[400px] lg:h-[600px]"
+              >
                 <div className="relative w-full h-full">
                   <Image
                     src={image}
@@ -115,7 +116,7 @@ export const Info = () => {
           el bienestar de tu mascota. Tu tranquilidad y la salud de tu amigo
           estarán en las mejores manos, porque tú y tu mascota al entrar por las
           puertas de nuestra clínica, pasarán a formar parte de nuestra gran
-          familia."
+          familia.&quot;
         </h3>
         <div className="text-sm w-4/5">
           <p className="font-bold mb-4">
