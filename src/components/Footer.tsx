@@ -35,7 +35,12 @@ export const Footer = () => {
               </div>
               <div className="flex items-center gap-x-2">
                 <span className="icon-[ph--map-pin-fill]" />
-                <span>Hernando de la Cruz N32-188 y Av. Atahualpa</span>
+                <a
+                  href="https://www.google.com/maps/place/Cl%C3%ADnica+Veterinaria+Rumipamba/@-0.1856591,-78.4958749,17z/data=!3m1!4b1!4m6!3m5!1s0x91d59b6c43b78a63:0xd34e2346eea836df!8m2!3d-0.1856591!4d-78.4933!16s%2Fg%2F11f6mpmt2t?entry=ttu&g_ep=EgoyMDI1MDIwOS4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blanck"
+                >
+                  Hernando de la Cruz N32-188 y Av. Atahualpa
+                </a>
               </div>
               <div className="flex items-center gap-x-2">
                 <span className="icon-[ph--phone-fill]" />
