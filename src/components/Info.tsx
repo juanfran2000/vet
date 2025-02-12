@@ -7,6 +7,7 @@ import {
   CarouselItem,
   CarouselNext,
   CarouselPrevious,
+  type CarouselApi,
 } from "@/components/ui/carousel";
 
 export const Info = () => {
@@ -53,7 +54,7 @@ export const Info = () => {
     []
   );
 
-  const [api, setApi] = useState<any>();
+  const [api, setApi] = useState<CarouselApi>();
 
   useEffect(() => {
     if (!api) return;

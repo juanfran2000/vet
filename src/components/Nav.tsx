@@ -235,21 +235,21 @@ export const Nav = () => {
                 className="block text-2xl text-white"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Departamentos
+                Servicios
               </a>
               <a
                 href="#ofertas"
                 className="block text-2xl text-white"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Ofertas especiales
+                Blogs Interesantes
               </a>
               <a
                 href="#contacto"
                 className="block text-2xl text-white"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Contactos
+                Formación
               </a>
               <div className="hidden lg:block">
                 <hr className="border-t border-white/10 mb-6 text-background " />

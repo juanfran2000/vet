@@ -46,13 +46,13 @@ export const Footer = () => {
                 Sobre nosotros
               </a>
               <a href="#departamentos" className="block hover:text-blue-500">
-                Departamentos
+                Servicios
               </a>
               <a href="#ofertas" className="block hover:text-blue-500">
-                Ofertas especiales
+                Blogs Interesantes
               </a>
               <a href="#contacto" className="block hover:text-blue-500">
-                Contacto
+                Formación
               </a>
             </nav>
           </div>
