@@ -2,10 +2,12 @@ import { services } from "@/data/services";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+
 interface ServicePageProps {
   params: {
     slug: string;
   };
+  searchParams: { [key: string]: string | string[] | undefined };
 }
 
 export function generateStaticParams() {
@@ -14,8 +16,10 @@ export function generateStaticParams() {
   }));
 }
 
-export default function ServicePage({ params }: ServicePageProps) {
-  const service = services.find((s) => s.slug === params.slug);
+export default async function ServicePage({ params }: ServicePageProps) {
+  const service = await Promise.resolve(
+    services.find((s) => s.slug === params.slug)
+  );
 
   if (!service) {
     notFound();
