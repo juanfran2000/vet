@@ -34,6 +34,7 @@ export const Our = () => {
         <video
           ref={videoRef}
           src="/marca/consulta.mp4"
+          poster="/video-portada.jpg"
           className="w-full h-full object-cover rounded-4xl cursor-pointer"
           onClick={handlePlayPause}
         />

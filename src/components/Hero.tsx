@@ -20,10 +20,10 @@ export const Hero = () => {
         <div className="flex flex-col">
           <p>Teléfono:</p>
           <a
-            href="tel:+593998934269"
+            href="tel:+593967692618"
             className="text-blue-600 text-xs font-bold"
           >
-            +593 998 934 269
+            +593 96 769 2618
           </a>
         </div>
         <div className="flex items-center gap-x-2 bg-gradient-to-b from-blue-700 to-blue-600 font-semibold rounded-full px-2 py-2 text-white text-xs">
