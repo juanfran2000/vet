@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { scrollTo } from "@/utils/scrollTo";
 
 export const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,13 +21,18 @@ export const Nav = () => {
     };
   }, [isMenuOpen]);
 
+  const handleNavClick = (elementId: string) => {
+    setIsMenuOpen(false);
+    scrollTo(elementId);
+  };
+
   return (
     <>
       {/* Mobile Nav con SVG */}
       <div className="sm:hidden top-0 w-full fixed z-20">
         <div className="relative h-24">
           <Image
-            src="/recursos/nav.svg"
+            src="/svg-nav.svg"
             alt="Nav background"
             className="w-full h-full object-cover"
             width={400}
@@ -43,7 +49,7 @@ export const Nav = () => {
                 className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 "
               >
                 <Image
-                  src="/marca/petVet.png"
+                  src="/marca/logo.png"
                   alt="logo"
                   width={40}
                   height={40}
@@ -58,7 +64,9 @@ export const Nav = () => {
                       24 / 7
                     </span>
                   </div>
-                  <p className="text-sm font-bold">+593 998 934 269</p>
+                  <a href="tel:++593967692618" className="text-sm font-bold">
+                    +593 96 769 2618
+                  </a>
                 </div>
                 {/* Menú */}
                 <button
@@ -87,7 +95,7 @@ export const Nav = () => {
                 className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10"
               >
                 <Image
-                  src="/marca/petVet.png"
+                  src="/marca/logo.png"
                   alt="logo"
                   width={40}
                   height={40}
@@ -106,8 +114,8 @@ export const Nav = () => {
 
             <div className="flex items-center gap-x-6">
               <div className="text-white flex items-center gap-x-4">
-                <a href="tel:+593998934269" className="font-bold sm:text-sm">
-                  +593 998 934 269
+                <a href="tel:++593967692618" className="font-bold sm:text-sm">
+                  +593 96 769 2618
                 </a>
                 <span className="bg-gradient-to-b from-blue-600 to-blue-500 px-3 py-1 rounded-full text-sm font-semibold flex items-center gap-x-1 sm:from-transparent sm:to-transparent sm:text-md">
                   <span className="icon-[streamline--interface-lighting-brightness-2-bright-adjust-brightness-adjustment-sun-raise-controls-half]" />
@@ -122,7 +130,7 @@ export const Nav = () => {
               >
                 <span className="icon-[bx--map] text-[22px]" />
                 <p className="text-xs font-bold uppercase">
-                  Mariscal Sucre y Taisha.
+                  Hernando de la Cruz N32-188 y Av. Atahualpa
                 </p>
               </a>
 
@@ -165,15 +173,15 @@ export const Nav = () => {
             <div className="lg:flex lg:flex-col lg:gap-y-8">
               <div className="hidden lg:block">
                 <Image
-                  src="/marca/desplegable.svg"
-                  alt="Mi Pet Clinic"
+                  src="/marca/hamburguesa.svg"
+                  alt="Veterinaria Rumipamba"
                   width={300}
                   height={80}
                   className="mb-8"
                 />
               </div>
               <h1 className="text-4xl font-bold text-white mb-8 lg:hidden">
-                Mi Pet Clinic
+                Veterinaria Rumipamba
               </h1>
 
               {/* Información de contacto */}
@@ -187,18 +195,18 @@ export const Nav = () => {
                 </div>
                 <div className="flex items-center gap-x-2 text-white">
                   <span className="icon-[ph--phone-fill]" />
-                  <span>+593 998 934 269</span>
+                  <span>+593 96 769 2618</span>
                 </div>
                 <div className="flex items-center gap-x-2 text-white">
                   <span className="icon-[ph--map-pin-fill]" />
-                  <span>Mariscal Sucre y Taisha</span>
+                  <span>Hernando de la Cruz N32-188 y Av. Atahualpa</span>
                 </div>
               </div>
 
               {/* Botones de acción */}
               <div className="flex gap-x-4 mb-8">
                 <a
-                  href="tel:+593998934269"
+                  href="tel:+593967692618"
                   className="flex-1 bg-blue-600 text-white py-3 rounded-full font-medium text-center"
                 >
                   Llamar
@@ -223,20 +231,18 @@ export const Nav = () => {
 
             {/* Enlaces de navegación */}
             <nav className="space-y-6">
-              <a
-                href="#sobre-nosotros"
-                className="block text-2xl text-white"
-                onClick={() => setIsMenuOpen(false)}
+              <button
+                onClick={() => handleNavClick("sobre-nosotros")}
+                className="block text-2xl text-white hover:text-blue-500 transition-colors duration-300"
               >
                 Sobre nosotros
-              </a>
-              <a
-                href="#departamentos"
-                className="block text-2xl text-white"
-                onClick={() => setIsMenuOpen(false)}
+              </button>
+              <button
+                onClick={() => handleNavClick("departamentos")}
+                className="block text-2xl text-white hover:text-blue-500 transition-colors duration-300"
               >
                 Servicios
-              </a>
+              </button>
               <a
                 href="#ofertas"
                 className="block text-2xl text-white"
@@ -255,14 +261,14 @@ export const Nav = () => {
                 <hr className="border-t border-white/10 mb-6 text-background " />
                 <div className="flex items-center gap-x-4">
                   <a
-                    href="https://www.instagram.com/mipetclinic/"
+                    href="https://www.instagram.com/explore/locations/1662080944096925/clinica-veterinaria-rumipamba/"
                     target="_blank"
                     className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-2xl"
                   >
                     <span className="icon-[mdi--instagram]" />
                   </a>
                   <a
-                    href="https://www.facebook.com/mipetclinic/?locale=es_LA"
+                    href="https://www.facebook.com/cvetrumipamba?fref=nf&ref=embed_page"
                     target="_blank"
                     className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-2xl "
                   >

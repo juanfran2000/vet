@@ -12,45 +12,7 @@ import {
 
 export const Info = () => {
   const baseImages = useMemo(
-    () => [
-      "/clientes/cliente37.png",
-      "/clientes/cliente1.png",
-      "/clientes/cliente2.png",
-      "/clientes/cliente3.png",
-      "/clientes/cliente4.png",
-      "/clientes/cliente5.png",
-      "/clientes/cliente6.png",
-      "/clientes/cliente7.png",
-      "/clientes/cliente8.png",
-      "/clientes/cliente9.png",
-      "/clientes/cliente10.png",
-      "/clientes/cliente11.png",
-      "/clientes/cliente12.png",
-      "/clientes/cliente13.png",
-      "/clientes/cliente14.png",
-      "/clientes/cliente15.png",
-      "/clientes/cliente16.png",
-      "/clientes/cliente17.png",
-      "/clientes/cliente18.png",
-      "/clientes/cliente19.png",
-      "/clientes/cliente20.png",
-      "/clientes/cliente21.png",
-      "/clientes/cliente22.png",
-      "/clientes/cliente23.png",
-      "/clientes/cliente24.png",
-      "/clientes/cliente25.png",
-      "/clientes/cliente26.png",
-      "/clientes/cliente27.png",
-      "/clientes/cliente28.png",
-      "/clientes/cliente29.png",
-      "/clientes/cliente30.png",
-      "/clientes/cliente31.png",
-      "/clientes/cliente32.png",
-      "/clientes/cliente33.png",
-      "/clientes/cliente34.png",
-      "/clientes/cliente35.png",
-      "/clientes/cliente36.png",
-    ],
+    () => ["/clientes/vet1.jpg", "/clientes/vet2.jpg", "/clientes/vet3.jpg"],
     []
   );
 
@@ -104,20 +66,20 @@ export const Info = () => {
       {/* nosotros */}
       <div className="bg-white rounded-4xl w-full lg:w-1/2 py-10 lg:py-12 flex flex-col gap-y-4 lg:gap-y-8 items-start px-4 lg:px-6 lg:overflow-y-auto  lg:h-[600px]">
         <h2 className="text-xs font-bold text-gray-400">
-          MÉDICOS DE MI PET CLINIC
+          MÉDICOS DE VETERINARIA RUMIPAMBA
         </h2>
         <h3 className="text-lg lg:text-3xl font-bold lg:w-3/4">
           Nuestros especialistas reciben formación periódica y mejoran sus
           cualificaciones.
         </h3>
         <h3 className="text-sm w-11/12">
-          Somos una clínica veterinaria ubicada sur de Quito con atención de 24
-          horas, dedicados al cuidado y atención de mascotas. Disponemos de las
-          mejores instalaciones y el personal mejor capacitado para garantizar
-          el bienestar de tu mascota. Tu tranquilidad y la salud de tu amigo
-          estarán en las mejores manos, porque tú y tu mascota al entrar por las
-          puertas de nuestra clínica, pasarán a formar parte de nuestra gran
-          familia.&quot;
+          Somos una clínica veterinaria ubicada norte de Quito con atención de
+          24 horas, dedicados al cuidado y atención de mascotas. Disponemos de
+          las mejores instalaciones y el personal mejor capacitado para
+          garantizar el bienestar de tu mascota. Tu tranquilidad y la salud de
+          tu amigo estarán en las mejores manos, porque tú y tu mascota al
+          entrar por las puertas de nuestra clínica, pasarán a formar parte de
+          nuestra gran familia.&quot;
         </h3>
         <div className="text-sm w-4/5">
           <p className="font-bold mb-4">
