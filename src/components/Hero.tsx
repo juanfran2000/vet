@@ -15,7 +15,7 @@ export const Hero = () => {
           target="_blank"
           className="max-w-28 text-xs"
         >
-          Mariscal Sucre y Taisha.
+          Hernando de la Cruz N32-188 y Av. Atahualpa.
         </a>
         <div className="flex flex-col">
           <p>Teléfono:</p>
@@ -33,7 +33,7 @@ export const Hero = () => {
       </div>
       <div className="absolute inset-0 pt-44 flex flex-col items-center">
         <Image
-          src="/marca/font-portada.svg"
+          src="/marca/centrada-mobile.svg"
           alt="Pet Clinic"
           width={800}
           height={200}

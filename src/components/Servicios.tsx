@@ -10,32 +10,32 @@ import {
 
 const reviews = [
   {
-    name: "Guiselle Llanos",
-    text: "Una gran experiencia y atención en mi Pet Clinic, me atendió Maria Jose Camacho y es una grandiosa doctora para mis perritos 🤗💖💖….",
+    name: "Khaterine Calvache",
+    text: "Excelente atención, con calidad y calidez. Profesionales de alto nivel y por sobre todo con amor hacia los animalitos. Estoy muy agradecida.",
     rating: 5,
     image: "/recursos/pets/review1.webp",
   },
   {
-    name: "Susy Martínez",
-    text: "Excelente atención y recomendado que  tratan a los animalitos muy bien y con amor. Fui atendida por la doctora María José y súper bien 10 /10",
+    name: "Estelle Shumacher",
+    text: "Un equipo realmente agradable, que se toma el tiempo para ayudarte a ti y a tu mascota también, los recomiendo.",
     rating: 5,
     image: "/recursos/pets/review2.webp",
   },
   {
-    name: "Carla Domenica Castro",
-    text: "Recomiendo ampliamente la clínica y a todo su equipo médico, en especial a la doctora María José Camacho. Desde el momento en que llegamos, recibimos una atención excepcional; revisaron a mi perrita Cora con mucho cuidado, y la doctora nos brindó un diagnóstico claro y detallado.",
+    name: "Monica Proaño",
+    text: "Una excelente atención y muy acertado diagnóstico y tratamiento, Max al siguiente día estaba mucho mejor.♥️",
     rating: 5,
     image: "/recursos/pets/review3.webp",
   },
   {
-    name: "Amy Masache",
-    text: "Excelente clínica, tienen todo lo necesario para atender a tus mascotitas, explican todo con mucho amor y paciencia. Mi Rocko se siente como en casa. Gracias a la Dra. Viviana una excelente profesional",
+    name: "Paola CTN",
+    text: "Muy bien ubicada, los doctores son muy amables. Las instalaciones son muy amplias y limpias. Tienen especialidades veterinarias si se necesitan y los doctores te explican en detalle todo lo que concierne al estado de nuestros peluditos, diagnósticos y alternativas de tratamiento y medicinas. Totalmente recomendable!",
     rating: 5,
     image: "/recursos/pets/review3.webp",
   },
   {
-    name: "Monica Borja",
-    text: "Excelente servicio y rápida atención, sin duda el mejor lugar para cuidar al consentido de la casa . 100% recomendado",
+    name: "Anny Rubio",
+    text: "Genial servicio! Son profesionales, realmente les interesa que tu perrito esté bien, que tú te sientas bien,Realmente recomiendo la veterinaria Rumipamba",
     rating: 5,
     image: "/recursos/pets/review3.webp",
   },
@@ -46,7 +46,7 @@ export const Servicios = () => {
     <div className="lg:mx-4 xl:mx-6 py-12 bg-white rounded-4xl">
       <div className="w-full">
         <Image
-          src="/marca/departamentos.svg"
+          src="/marca/font-full.svg"
           alt="Servicios"
           className="object-contain w-full"
           width={1000}

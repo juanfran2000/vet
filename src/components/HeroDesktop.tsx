@@ -104,7 +104,7 @@ export const HeroDesktop = () => {
       <div className="min-h-[450px] w-full bg-white rounded-4xl flex justify-between items-center px-12">
         <div className="w-5/12 h-20 flex justify-center items-center">
           <Image
-            src="/marca/miPetClinic-portada.svg"
+            src="/marca/rumipamba.svg"
             alt="Pet Clinic"
             width={800}
             height={200}
@@ -116,10 +116,12 @@ export const HeroDesktop = () => {
             Clínica veterinaria 24 horas
           </h1>
           <p className="text-blue-600 text-2xl xl:text-3xl font-bold">
-            +593 998 934 269
+            +593 96 769 2618
           </p>
           <div className="flex w-full justify-end items-center gap-x-4">
-            <p className="w-4/12 text-right">Mariscal Sucre y Taisha.</p>
+            <p className="w-4/12 text-right">
+              Hernando de la Cruz N32-188 y Av. Atahualpa
+            </p>
             <div className="flex items-center gap-x-2 bg-gradient-to-b from-blue-700 to-blue-600 font-semibold rounded-full px-3 py-2 text-white text-xs">
               <span className="icon-[streamline--interface-lighting-brightness-2-bright-adjust-brightness-adjustment-sun-raise-controls-half]" />
               <p>24 / 7</p>
