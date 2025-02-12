@@ -32,7 +32,7 @@ export const Nav = () => {
       <div className="sm:hidden top-0 w-full fixed z-20">
         <div className="relative h-24">
           <Image
-            src="/svg-nav.svg"
+            src="/svg-navbar.svg"
             alt="Nav background"
             className="w-full h-full object-cover"
             width={400}
@@ -124,7 +124,7 @@ export const Nav = () => {
               </div>
 
               <a
-                href="https://maps.app.goo.gl/XLT4AS6Md3eAAF387"
+                href="https://www.google.com/maps/place/Cl%C3%ADnica+Veterinaria+Rumipamba/@-0.1856591,-78.4958749,17z/data=!3m1!4b1!4m6!3m5!1s0x91d59b6c43b78a63:0xd34e2346eea836df!8m2!3d-0.1856591!4d-78.4933!16s%2Fg%2F11f6mpmt2t?entry=ttu&g_ep=EgoyMDI1MDIwOS4wIKXMDSoASAFQAw%3D%3D"
                 target="_blank"
                 className="text-white flex items-center gap-x-2"
               >
@@ -212,7 +212,7 @@ export const Nav = () => {
                   Llamar
                 </a>
                 <a
-                  href="https://maps.app.goo.gl/crL7sdSLH1yZdAyc8"
+                  href="https://www.google.com/maps/place/Cl%C3%ADnica+Veterinaria+Rumipamba/@-0.1856591,-78.4958749,17z/data=!3m1!4b1!4m6!3m5!1s0x91d59b6c43b78a63:0xd34e2346eea836df!8m2!3d-0.1856591!4d-78.4933!16s%2Fg%2F11f6mpmt2t?entry=ttu&g_ep=EgoyMDI1MDIwOS4wIKXMDSoASAFQAw%3D%3D"
                   target="_blank"
                   className="flex-1 bg-white/10 text-white py-3 rounded-full font-medium text-center"
                 >
