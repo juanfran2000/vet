@@ -4,13 +4,14 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Metadata } from "next";
 
-interface PageProps {
-  params: { slug: string };
-}
+// Definimos los tipos correctamente según Next.js
+type Props = {
+  params: {
+    slug: string;
+  };
+};
 
-export async function generateMetadata({
-  params,
-}: PageProps): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = services.find((s) => s.slug === params.slug);
   return {
     title: service?.title || "Servicio no encontrado",
@@ -18,8 +19,9 @@ export async function generateMetadata({
   };
 }
 
-export default function Page({ params }: PageProps) {
-  const service = services.find((s) => s.slug === params.slug);
+export default async function Page({ params }: Props) {
+  const { slug } = params;
+  const service = services.find((s) => s.slug === slug);
 
   if (!service) {
     notFound();
