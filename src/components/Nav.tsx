@@ -32,7 +32,7 @@ export const Nav = () => {
       <div className="sm:hidden top-0 w-full fixed z-20">
         <div className="relative h-24">
           <Image
-            src="/svg-nav.svg"
+            src="/svg-navbar.svg"
             alt="Nav background"
             className="w-full h-full object-cover"
             width={400}
