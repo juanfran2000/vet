@@ -2,24 +2,24 @@ import { services } from "@/data/services";
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import { Metadata } from "next";
 
-interface ServicePageProps {
-  params: {
-    slug: string;
+interface PageProps {
+  params: { slug: string };
+}
+
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const service = services.find((s) => s.slug === params.slug);
+  return {
+    title: service?.title || "Servicio no encontrado",
+    description: service?.details.description || "",
   };
-  searchParams: { [key: string]: string | string[] | undefined };
 }
 
-export function generateStaticParams() {
-  return services.map((service) => ({
-    slug: service.slug,
-  }));
-}
-
-export default async function ServicePage({ params }: ServicePageProps) {
-  const service = await Promise.resolve(
-    services.find((s) => s.slug === params.slug)
-  );
+export default function Page({ params }: PageProps) {
+  const service = services.find((s) => s.slug === params.slug);
 
   if (!service) {
     notFound();
