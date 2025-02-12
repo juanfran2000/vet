@@ -5,9 +5,9 @@ import React from "react";
 
 export const Hero = () => {
   return (
-    <div className="w-full min-h-[600px] bg-white rounded-4xl flex flex-col pt-8 px-4 sm:px-8 relative">
-      <div className="font-bold text-xl sm:text-3xl w-full sm:w-9/12">
-        <h1>Clínica veterinaria 24 horas</h1>
+    <div className="w-full min-h-[610px] bg-white rounded-4xl flex flex-col pt-8 px-6 sm:px-8 relative">
+      <div className="font-bold text-2xl sm:text-3xl sm:w-9/12 w-8/12">
+        <h1 className="text-black">Clínica veterinaria 24 horas</h1>
       </div>
       <div className="flex sm:flex-row justify-between text-sm items-start sm:items-center mt-4 gap-y-4 sm:gap-y-0 relative z-10">
         <a
@@ -17,7 +17,7 @@ export const Hero = () => {
         >
           Mariscal Sucre y Taisha.
         </a>
-        <div className="">
+        <div className="flex flex-col">
           <p>Teléfono:</p>
           <a
             href="tel:+593998934269"
@@ -33,7 +33,7 @@ export const Hero = () => {
       </div>
       <div className="absolute inset-0 pt-44 flex flex-col items-center">
         <Image
-          src="/marca/portada-font.svg"
+          src="/marca/font-portada.svg"
           alt="Pet Clinic"
           width={800}
           height={200}
