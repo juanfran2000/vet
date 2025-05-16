@@ -49,10 +49,10 @@ export const Nav = () => {
                 className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 "
               >
                 <Image
-                  src="/marca/logo.png"
+                  src="/petAttention/logo-redondo.png"
                   alt="logo"
-                  width={40}
-                  height={40}
+                  width={100}
+                  height={100}
                   className="object-cover"
                 />
               </Link>
@@ -64,8 +64,8 @@ export const Nav = () => {
                       24 / 7
                     </span>
                   </div>
-                  <a href="tel:++593967692618" className="text-sm font-bold">
-                    +593 96 769 2618
+                  <a href="tel:++593983883197" className="text-sm font-bold">
+                    +593 98 388 3197
                   </a>
                 </div>
                 {/* Menú */}
@@ -95,7 +95,7 @@ export const Nav = () => {
                 className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10"
               >
                 <Image
-                  src="/marca/logo.png"
+                  src="/petAttention/logo-redondo.png"
                   alt="logo"
                   width={40}
                   height={40}
@@ -114,8 +114,8 @@ export const Nav = () => {
 
             <div className="flex items-center gap-x-6">
               <div className="text-white flex items-center gap-x-4">
-                <a href="tel:++593967692618" className="font-bold sm:text-sm">
-                  +593 96 769 2618
+                <a href="tel:+593983883197" className="font-bold sm:text-sm">
+                  +593 98 388 3197
                 </a>
                 <span className="bg-gradient-to-b from-blue-600 to-blue-500 px-3 py-1 rounded-full text-sm font-semibold flex items-center gap-x-1 sm:from-transparent sm:to-transparent sm:text-md">
                   <span className="icon-[streamline--interface-lighting-brightness-2-bright-adjust-brightness-adjustment-sun-raise-controls-half]" />
@@ -124,13 +124,13 @@ export const Nav = () => {
               </div>
 
               <a
-                href="https://www.google.com/maps/place/Cl%C3%ADnica+Veterinaria+Rumipamba/@-0.1856591,-78.4958749,17z/data=!3m1!4b1!4m6!3m5!1s0x91d59b6c43b78a63:0xd34e2346eea836df!8m2!3d-0.1856591!4d-78.4933!16s%2Fg%2F11f6mpmt2t?entry=ttu&g_ep=EgoyMDI1MDIwOS4wIKXMDSoASAFQAw%3D%3D"
+                href="https://www.google.com/maps/place/Corea+%26+N%C3%BA%C3%B1ez+de+Vela,+170102+Quito,+Ecuador/@-0.1772028,-78.4897584,17z/data=!3m1!4b1!4m6!3m5!1s0x91d59a8f667d8edd:0x54f94551ff1174a1!8m2!3d-0.1772028!4d-78.4871835!16s%2Fg%2F11f32pcg89?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
                 target="_blank"
                 className="text-white flex items-center gap-x-2"
               >
                 <span className="icon-[bx--map] text-[22px]" />
                 <p className="text-xs font-bold uppercase">
-                  Hernando de la Cruz N32-188 y Av. Atahualpa
+                  Nuñez de vela y Corea.
                 </p>
               </a>
 
@@ -173,15 +173,15 @@ export const Nav = () => {
             <div className="lg:flex lg:flex-col lg:gap-y-8">
               <div className="hidden lg:block">
                 <Image
-                  src="/marca/hamburguesa.svg"
-                  alt="Veterinaria Rumipamba"
+                  src="/petAttention/navbar.svg"
+                  alt="Pet Attention veterinaria"
                   width={300}
                   height={80}
                   className="mb-8"
                 />
               </div>
               <h1 className="text-4xl font-bold text-white mb-8 lg:hidden">
-                Veterinaria Rumipamba
+                Pet Attention
               </h1>
 
               {/* Información de contacto */}
@@ -195,24 +195,24 @@ export const Nav = () => {
                 </div>
                 <div className="flex items-center gap-x-2 text-white">
                   <span className="icon-[ph--phone-fill]" />
-                  <span>+593 96 769 2618</span>
+                  <span>+593 98 388 3197</span>
                 </div>
                 <div className="flex items-center gap-x-2 text-white">
                   <span className="icon-[ph--map-pin-fill]" />
-                  <span>Hernando de la Cruz N32-188 y Av. Atahualpa</span>
+                  <span>Nuñez de vela y Corea</span>
                 </div>
               </div>
 
               {/* Botones de acción */}
               <div className="flex gap-x-4 mb-8">
                 <a
-                  href="tel:+593967692618"
+                  href="tel:+593983883197"
                   className="flex-1 bg-blue-600 text-white py-3 rounded-full font-medium text-center"
                 >
                   Llamar
                 </a>
                 <a
-                  href="https://www.google.com/maps/place/Cl%C3%ADnica+Veterinaria+Rumipamba/@-0.1856591,-78.4958749,17z/data=!3m1!4b1!4m6!3m5!1s0x91d59b6c43b78a63:0xd34e2346eea836df!8m2!3d-0.1856591!4d-78.4933!16s%2Fg%2F11f6mpmt2t?entry=ttu&g_ep=EgoyMDI1MDIwOS4wIKXMDSoASAFQAw%3D%3D"
+                  href="https://www.google.com/maps/place/Corea+%26+N%C3%BA%C3%B1ez+de+Vela,+170102+Quito,+Ecuador/@-0.1772028,-78.4897584,17z/data=!3m1!4b1!4m6!3m5!1s0x91d59a8f667d8edd:0x54f94551ff1174a1!8m2!3d-0.1772028!4d-78.4871835!16s%2Fg%2F11f32pcg89?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
                   target="_blank"
                   className="flex-1 bg-white/10 text-white py-3 rounded-full font-medium text-center"
                 >
@@ -261,14 +261,14 @@ export const Nav = () => {
                 <hr className="border-t border-white/10 mb-6 text-background " />
                 <div className="flex items-center gap-x-4">
                   <a
-                    href="https://www.instagram.com/explore/locations/1662080944096925/clinica-veterinaria-rumipamba/"
+                    href="https://www.instagram.com/lynqea?igsh=bjN2NWx6bHdva3Yz&utm_source=qr"
                     target="_blank"
                     className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-2xl"
                   >
                     <span className="icon-[mdi--instagram]" />
                   </a>
                   <a
-                    href="https://www.facebook.com/cvetrumipamba?fref=nf&ref=embed_page"
+                    href="https://www.instagram.com/lynqea?igsh=bjN2NWx6bHdva3Yz&utm_source=qr"
                     target="_blank"
                     className="w-10 h-10 bg-white rounded-full flex items-center justify-center text-2xl "
                   >

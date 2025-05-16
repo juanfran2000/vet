@@ -66,7 +66,7 @@ export const Info = () => {
       {/* nosotros */}
       <div className="bg-white rounded-4xl w-full lg:w-1/2 py-10 lg:py-12 flex flex-col gap-y-4 lg:gap-y-8 items-start px-4 lg:px-6 lg:overflow-y-auto  lg:h-[600px]">
         <h2 className="text-xs font-bold text-gray-400">
-          MÉDICOS DE VETERINARIA RUMIPAMBA
+          MÉDICOS DE PET ATTENTION
         </h2>
         <h3 className="text-lg lg:text-3xl font-bold lg:w-3/4">
           Nuestros especialistas reciben formación periódica y mejoran sus

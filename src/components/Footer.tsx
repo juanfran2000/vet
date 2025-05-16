@@ -16,14 +16,14 @@ export const Footer = () => {
             <div className="flex items-center gap-x-4">
               <div className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10">
                 <Image
-                  src="/marca/logo.png"
+                  src="/petAttention/logo-redondo.png"
                   alt="logo"
                   width={40}
                   height={40}
                   className="object-cover"
                 />
               </div>
-              <h3 className="text-xl font-bold">Veterinaria Rumipamba</h3>
+              <h3 className="text-xl font-bold">Pet Attention</h3>
             </div>
             <div className="space-y-4">
               <div className="flex items-center gap-x-2">
@@ -36,15 +36,15 @@ export const Footer = () => {
               <div className="flex items-center gap-x-2">
                 <span className="icon-[ph--map-pin-fill]" />
                 <a
-                  href="https://www.google.com/maps/place/Cl%C3%ADnica+Veterinaria+Rumipamba/@-0.1856591,-78.4958749,17z/data=!3m1!4b1!4m6!3m5!1s0x91d59b6c43b78a63:0xd34e2346eea836df!8m2!3d-0.1856591!4d-78.4933!16s%2Fg%2F11f6mpmt2t?entry=ttu&g_ep=EgoyMDI1MDIwOS4wIKXMDSoASAFQAw%3D%3D"
+                  href="https://www.google.com/maps/place/Corea+%26+N%C3%BA%C3%B1ez+de+Vela,+170102+Quito,+Ecuador/@-0.1772028,-78.4897584,17z/data=!3m1!4b1!4m6!3m5!1s0x91d59a8f667d8edd:0x54f94551ff1174a1!8m2!3d-0.1772028!4d-78.4871835!16s%2Fg%2F11f32pcg89?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoJLDEwMjExNDU1SAFQAw%3D%3D"
                   target="_blanck"
                 >
-                  Hernando de la Cruz N32-188 y Av. Atahualpa
+                  Nuñez de vela y Corea
                 </a>
               </div>
               <div className="flex items-center gap-x-2">
                 <span className="icon-[ph--phone-fill]" />
-                <span>+593 96 769 2618</span>
+                <span>+593 98 388 3197</span>
               </div>
             </div>
           </div>
@@ -84,14 +84,14 @@ export const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center gap-x-4">
               <a
-                href="https://www.instagram.com/explore/locations/1662080944096925/clinica-veterinaria-rumipamba/"
+                href="https://www.instagram.com/lynqea?igsh=bjN2NWx6bHdva3Yz&utm_source=qr"
                 target="_blank"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300"
               >
                 <span className="icon-[mdi--instagram] text-xl" />
               </a>
               <a
-                href="https://www.facebook.com/cvetrumipamba?fref=nf&ref=embed_page"
+                href="https://www.instagram.com/lynqea?igsh=bjN2NWx6bHdva3Yz&utm_source=qr"
                 target="_blank"
                 className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300"
               >
@@ -110,8 +110,8 @@ export const Footer = () => {
         {/* Línea divisoria y copyright */}
         <div className="mt-12 pt-8 border-t border-white/10">
           <p className="text-center text-sm text-gray-400">
-            © {new Date().getFullYear()} Veterinaria Rumipamba. Todos los
-            derechos reservados.
+            © {new Date().getFullYear()} Pet Attention. Todos los derechos
+            reservados.
           </p>
         </div>
       </div>

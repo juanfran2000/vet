@@ -88,7 +88,7 @@ export default async function Page({ params }: Props) {
 
           <div className="flex justify-center">
             <Link
-              href={`https://wa.me/+593967692618?text=Me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios%20veterinarios%20de%20${encodeURIComponent(
+              href={`https://wa.me/+593983883197?text=Me%20interesa%20conocer%20m%C3%A1s%20sobre%20sus%20servicios%20veterinarios%20de%20${encodeURIComponent(
                 service.title
               )}%20por%20favor`}
               target="_blank"
