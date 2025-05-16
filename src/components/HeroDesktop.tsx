@@ -119,7 +119,7 @@ export const HeroDesktop = () => {
             +593 98 388 3197
           </p>
           <div className="flex w-full justify-end items-center gap-x-4">
-            <p className="w-4/12 text-right">Nuñez de vela y Corea</p>
+            <p className="w-4/12 text-right">Nuñez de vela y Corea.</p>
             <div className="flex items-center gap-x-2 bg-gradient-to-b from-blue-700 to-blue-600 font-semibold rounded-full px-3 py-2 text-white text-xs">
               <span className="icon-[streamline--interface-lighting-brightness-2-bright-adjust-brightness-adjustment-sun-raise-controls-half]" />
               <p>24 / 7</p>

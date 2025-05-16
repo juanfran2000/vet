@@ -130,7 +130,7 @@ export const Nav = () => {
               >
                 <span className="icon-[bx--map] text-[22px]" />
                 <p className="text-xs font-bold uppercase">
-                  Nuñez de vela y Corea.
+                  Nuñez de vela y Corea
                 </p>
               </a>
 

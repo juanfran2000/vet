@@ -15,7 +15,7 @@ export const Hero = () => {
           target="_blank"
           className="max-w-28 text-xs"
         >
-          Nuñez de vela y Corea.
+          Nuñez de vela y Corea
         </a>
         <div className="flex flex-col">
           <p>Teléfono:</p>
