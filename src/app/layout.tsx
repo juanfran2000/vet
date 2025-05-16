@@ -10,16 +10,16 @@ const inter = Inter({
 
 export const metadata = {
   title: "Clinica veterinaria 24 horas",
-  description: "Clinica veterinaria Rumipamba",
+  description: "Clinica Pet Attention",
   openGraph: {
     title: "Clinica veterinaria 24 horas",
-    description: "Clinica veterinaria Rumipamba",
+    description: "Clinica Pet Attention",
     images: [
       {
         url: "/og-image.png", // Ruta a tu imagen en la carpeta public
         width: 1200,
         height: 630,
-        alt: "Clinica Veterinaria Rumipamba",
+        alt: "Clinica Veterinaria Pet Attention",
       },
     ],
   },

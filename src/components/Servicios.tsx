@@ -35,7 +35,7 @@ const reviews = [
   },
   {
     name: "Anny Rubio",
-    text: "Genial servicio! Son profesionales, realmente les interesa que tu perrito esté bien, que tú te sientas bien,Realmente recomiendo la veterinaria Rumipamba",
+    text: "Genial servicio! Son profesionales, realmente les interesa que tu perrito esté bien, que tú te sientas bien,Realmente recomiendo la Pet Attention",
     rating: 5,
     image: "/recursos/pets/review3.webp",
   },
@@ -46,7 +46,7 @@ export const Servicios = () => {
     <div className="lg:mx-4 xl:mx-6 py-12 bg-white rounded-4xl">
       <div className="w-full">
         <Image
-          src="/marca/font-full.svg"
+          src="/petAttention/banner.svg"
           alt="Servicios"
           className="object-contain w-full"
           width={1000}

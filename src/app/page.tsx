@@ -20,7 +20,7 @@ export default function Home() {
         <Servicios />
       </div>
       <a
-        href="https://wa.me/+593967692618"
+        href="https://wa.me/+593983883197"
         target="_blanck"
         className="w-16 h-16 bg-gradient-to-t from-blue-600 to-blue-500 rounded-full flex items-center justify-center fixed bottom-8 right-6 sm:right-14 md:right-32 lg:right-14 shadow-md animate-bounce z-50"
       >
