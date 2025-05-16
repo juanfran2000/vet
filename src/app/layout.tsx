@@ -16,7 +16,7 @@ export const metadata = {
     description: "Clinica Pet Attention",
     images: [
       {
-        url: "/og-image.png", // Ruta a tu imagen en la carpeta public
+        url: "/og.png", // Ruta a tu imagen en la carpeta public
         width: 1200,
         height: 630,
         alt: "Clinica Veterinaria Pet Attention",
